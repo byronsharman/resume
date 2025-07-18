@@ -1,0 +1,12 @@
+#import "../lib.typ": dates-helper, edu
+
+#edu(
+  institution: "Colorado School of Mines",
+  location: "Golden, CO",
+  dates: dates-helper(start-date: "Aug 2023", end-date: "December 2026"),
+  degree: "Bachelor of Science in Computer Science",
+  consistent: true,
+)
+- GPA: 3.625
+- Activities: President of ACM (Computer Science club), Competitive Programming
+- Semester abroad: University of Canterbury (Christchurch, New Zealand)

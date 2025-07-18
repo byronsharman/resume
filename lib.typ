@@ -1,0 +1,216 @@
+// adapted from https://github.com/stuxf/basic-typst-resume-template/blob/main/src/resume.typ
+
+#let resume(
+  author: "",
+  author-position: left,
+  personal-info-position: left,
+
+  contact-info: [],
+  links: [],
+
+  accent-color: rgb("#000000"),
+  font: "New Computer Modern",
+  paper: "us-letter",
+  author-font-size: 20pt,
+  font-size: 10pt,
+
+  body,
+) = {
+
+  // Sets document metadata
+  set document(author: author, title: author)
+
+  // Document-wide formatting, including font and margins
+  set text(
+    // LaTeX style font
+    font: font,
+    size: font-size,
+    lang: "en",
+    // Disable ligatures so ATS systems do not get confused when parsing fonts.
+    ligatures: false
+  )
+
+  // Recommended to have 0.5in margin on all sides
+  set page(
+    margin: (0.5in),
+    paper: paper,
+  )
+
+  /*
+  // Link styles
+  // show link: underline
+  show link: it => {
+    if it.dest.starts-with("tel:") { it }
+    else { underline(it) }
+  }
+  */
+
+  // Small caps for section titles
+  show heading.where(level: 2): it => [
+    #pad(top: 0pt, bottom: -10pt, [#smallcaps(it.body)])
+    #line(length: 100%, stroke: 1pt)
+  ]
+
+  // Style level 3 headings normally
+  // This allows us to use level 3 headings instead of strongs, which makes
+  // more sense semantically. It also adds more information to the outline,
+  // which would come in handy if there exist any ATSs that look at the
+  // outline.
+  show heading.where(level: 3): it => it.body
+
+  // Accent color styling
+  show heading: set text(accent-color)
+  show link: set text(accent-color)
+  show strong: set text(accent-color)
+
+  set terms(separator: [*:* ])
+
+  stack(
+    dir: ltr, 
+
+    block[
+      // Name will be aligned left, bold and big
+      #show heading.where(level: 1): it => [
+        #set align(author-position)
+        #set text(
+          weight: 700,
+          size: author-font-size,
+        )
+        #pad(it.body)
+      ]
+      = #author
+      #contact-info.join("\n")
+    ],
+
+    h(1fr),
+
+    align(
+      right,
+      links
+        .map(url => link("https://" + url, url))
+        .join("\n")
+    )
+  )
+
+  // Main body.
+  set par(justify: true)
+
+  body
+}
+
+// Generic two by two component for resume
+#let generic-two-by-two(
+  top-left: "",
+  top-right: "",
+  bottom-left: "",
+  bottom-right: "",
+) = {
+  [
+    #top-left #h(1fr) #top-right \
+    #bottom-left #h(1fr) #bottom-right
+  ]
+}
+
+// Generic one by two component for resume
+#let generic-one-by-two(
+  left: "",
+  right: "",
+) = {
+  [
+    #left #h(1fr) #right
+  ]
+}
+
+// Cannot just use normal --- ligature becuase ligatures are disabled for good reasons
+#let dates-helper(
+  start-date: "",
+  end-date: "",
+) = {
+  start-date + " " + $dash.en$ + " " + end-date
+}
+
+// Section components below
+#let edu(
+  institution: "",
+  dates: "",
+  degree: "",
+  gpa: "",
+  location: "",
+  // Makes dates on upper right like rest of components
+  consistent: false,
+) = {
+  if consistent {
+    // edu-constant style (dates top-right, location bottom-right)
+    generic-two-by-two(
+      top-left: [=== #institution],
+      top-right: dates,
+      bottom-left: emph(degree),
+      bottom-right: emph(location),
+    )
+  } else {
+    // original edu style (location top-right, dates bottom-right)
+    generic-two-by-two(
+      top-left: [=== #institution],
+      top-right: location,
+      bottom-left: emph(degree),
+      bottom-right: emph(dates),
+    )
+  }
+}
+
+#let work(
+  title: "",
+  dates: "",
+  company: "",
+  location: "",
+) = {
+  generic-two-by-two(
+    top-left: [=== #company],
+    top-right: dates,
+    bottom-left: title,
+    bottom-right: emph(location),
+  )
+}
+
+#let project(
+  name: "",
+  dates: "",
+  parenthetical: "",
+  hackathon: false,
+) = {
+  if hackathon {
+    parenthetical = [Hackathon: #parenthetical]
+  }
+  generic-one-by-two(
+    left: {
+      heading(level: 3, name)
+      if parenthetical != "" and dates != "" [ (#parenthetical)]
+    },
+    right: dates,
+  )
+}
+
+#let certificates(
+  name: "",
+  issuer: "",
+  url: "",
+  date: "",
+) = {
+  [
+    *#name*, #issuer
+    #if url != "" {
+      [ (#link("https://" + url)[#url])]
+    }
+    #h(1fr) #date
+  ]
+}
+
+#let extracurriculars(
+  activity: "",
+  dates: "",
+) = {
+  generic-one-by-two(
+    left: [=== #activity],
+    right: dates,
+  )
+}
