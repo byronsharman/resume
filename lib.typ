@@ -36,14 +36,11 @@
     paper: paper,
   )
 
-  /*
   // Link styles
-  // show link: underline
   show link: it => {
     if it.dest.starts-with("tel:") { it }
-    else { underline(it) }
+    else { underline(it, offset: 2pt) }
   }
-  */
 
   // Small caps for section titles
   show heading.where(level: 2): it => [
@@ -117,7 +114,7 @@
   right: "",
 ) = {
   [
-    #left #h(1fr) #right
+    #left #h(1fr) #right \
   ]
 }
 
@@ -158,35 +155,77 @@
   }
 }
 
+#let experience(
+  entity: "",
+  parenthetical: "",
+  dates: "",
+  location: "",
+  // 0 = one-line header only; 1 = one-line header with bullets; 2 = two-line header with bullets
+  verbosity: 0,
+  bullets: (),
+  bullet-limit: -1,
+) = {
+  let bullet-content = {
+    if bullets.len() > 0 {
+      if bullet-limit >= 0 {
+        bullets = bullets.slice(0, count: bullet-limit)
+      }
+      list(..bullets)
+    }
+  }
+  let one-heading = generic-one-by-two(
+    left: {
+      heading(level: 3, entity)
+      if parenthetical != "" {
+        [ (#parenthetical)]
+      }
+    },
+    right: dates,
+  )
+  let two-heading = generic-two-by-two(
+    top-left: [=== #entity],
+    top-right: dates,
+    bottom-left: parenthetical,
+    bottom-right: emph(location),
+  )
+  if verbosity == 0 {
+    one-heading
+    v(-2pt)
+  } else if verbosity == 1 {
+    one-heading
+    bullet-content
+  } else if verbosity == 2 {
+    two-heading
+    bullet-content
+  } else {
+    panic("invalid verbosity")
+  }
+}
+
 #let work(
   title: "",
-  dates: "",
   company: "",
-  location: "",
+  ..args,
 ) = {
-  generic-two-by-two(
-    top-left: [=== #company],
-    top-right: dates,
-    bottom-left: title,
-    bottom-right: emph(location),
+  experience(
+    entity: company,
+    parenthetical: title,
+    ..args,
   )
 }
 
 #let project(
   name: "",
-  dates: "",
-  parenthetical: "",
   hackathon: false,
+  parenthetical: "",
+  ..args,
 ) = {
   if hackathon {
-    parenthetical = [Hackathon: #parenthetical]
+    args = arguments(..args, parenthetical: [Hackathon: #parenthetical])
   }
-  generic-one-by-two(
-    left: {
-      heading(level: 3, name)
-      if parenthetical != "" and dates != "" [ (#parenthetical)]
-    },
-    right: dates,
+  experience(
+    entity: name,
+    ..args,
   )
 }
 

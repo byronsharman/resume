@@ -17,6 +17,7 @@
   links: links,
 
   // formatting
+  // accent-color: oklch(50.0%, 0.1, 211deg),
   font: "Libertinus Serif",
   font-size: 11pt,
   paper: "us-letter",
@@ -24,39 +25,37 @@
   personal-info-position: left,
 )
 
-/*
-* Lines that start with == are formatted into section headings
-* You can use the specific formatting functions if needed
-* The following formatting functions are listed below
-* #edu(dates: "", degree: "", gpa: "", institution: "", location: "", consistent: false)
-* #work(company: "", dates: "", location: "", title: "")
-* #project(dates: "", name: "", role: "", url: "")
-* certificates(name: "", issuer: "", url: "", date: "")
-* #extracurriculars(activity: "", dates: "")
-* There are also the following generic functions that don't apply any formatting
-* #generic-two-by-two(top-left: "", top-right: "", bottom-left: "", bottom-right: "")
-* #generic-one-by-two(left: "", right: "")
-*/
-
 == Education
 
 #include "education/mines.typ"
 // #include "education/canterbury.typ"
 
-== Experience
-
-#include "experience/csci220.typ"
-#include "experience/field-session.typ"
-// #include "experience/walmart.typ"
-// #include "experience/ppld.typ"
-
-== Projects
-
-#include "projects/byronsharman-com.typ"
-#include "projects/blasterhacks-2025.typ"
-#include "projects/blasterhacks-2024.typ"
-
 == Skills
+/ Technologies and Frameworks: Git, Linux, AWS, Terraform, Svelte, SvelteKit, TailwindCSS, Node.js
+/ Languages: Typescript, JavaScript, Go, Python, C++, Bash, regex, Nix, Typst, LaTeX
 
-/ Languages: Python, Typescript, JavaScript, Go, C++, Terraform/HCL, Bash, regex, Nix, Typst, LaTeX
-/ Technologies and Frameworks: Git, Linux, Svelte, SvelteKit, TailwindCSS, AWS, Node.js
+== Software Engineering Experience
+
+#import "experience/csci220.typ"
+#work(..csci220.data, verbosity: 2)
+#import "projects/byronsharman-com.typ"
+#project(..byronsharman-com.data, verbosity: 1, bullet-limit: 2)
+#import "experience/field-session.typ"
+#work(..field-session.data, verbosity: 2)
+#import "projects/blasterhacks-2025.typ"
+#project(..blasterhacks-2025.data, verbosity: 1, bullet-limit: 2)
+#import "projects/blasterhacks-2024.typ"
+#project(..blasterhacks-2024.data, verbosity: 1, bullet-limit: 1)
+=== ... and 4~other hackathon projects
+
+== Other Experience
+
+#include "experience/walmart.typ"
+#include "experience/ppld.typ"
+
+#import "experience/bees-computing.typ"
+#work(..bees-computing.data)
+
+#line(length: 100%, stroke: 1pt)
+
+/ Conversation starters: I play piano, cook, hike, play video games, read books, blog, edit Wikipedia, and more!
