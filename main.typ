@@ -17,7 +17,7 @@
   links: links,
 
   // formatting
-  // accent-color: oklch(50.0%, 0.1, 211deg),
+  // accent-color: oklch(40.0%, 0.1, 211deg),
   font: "Libertinus Serif",
   font-size: 11pt,
   paper: "us-letter",
@@ -32,7 +32,7 @@
 
 == Skills
 / Technologies and Frameworks: Git, Linux, AWS, Terraform, Svelte, SvelteKit, TailwindCSS, Node.js
-/ Languages: Typescript, JavaScript, Go, Python, C++, Bash, regex, Nix, Typst, LaTeX
+/ Languages: Typescript, JavaScript, Go, Python, C++, Java, Bash, regex, Nix, Typst, LaTeX
 
 == Software Engineering Experience
 
@@ -43,10 +43,9 @@
 #import "experience/field-session.typ"
 #work(..field-session.data, verbosity: 2)
 #import "projects/blasterhacks-2025.typ"
-#project(..blasterhacks-2025.data, verbosity: 1, bullet-limit: 2)
+#project(..blasterhacks-2025.data, verbosity: 1)
 #import "projects/blasterhacks-2024.typ"
-#project(..blasterhacks-2024.data, verbosity: 1, bullet-limit: 1)
-=== ... and 4~other hackathon projects
+#project(..blasterhacks-2024.data, verbosity: 1, bullet-limit: 2)
 
 == Other Experience
 

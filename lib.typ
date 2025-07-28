@@ -30,9 +30,8 @@
     ligatures: false
   )
 
-  // Recommended to have 0.5in margin on all sides
   set page(
-    margin: (0.5in),
+    margin: 0.5in,
     paper: paper,
   )
 
@@ -44,7 +43,7 @@
 
   // Small caps for section titles
   show heading.where(level: 2): it => [
-    #pad(top: 0pt, bottom: -10pt, [#smallcaps(it.body)])
+    #pad(top: 0pt, bottom: -10pt, it.body)
     #line(length: 100%, stroke: 1pt)
   ]
 
@@ -56,9 +55,9 @@
   show heading.where(level: 3): it => it.body
 
   // Accent color styling
-  show heading: set text(accent-color)
-  show link: set text(accent-color)
-  show strong: set text(accent-color)
+  show heading.where(level: 2): set text(accent-color)
+  // show link: set text(accent-color)
+  // show strong: set text(accent-color)
 
   set terms(separator: [*:* ])
 

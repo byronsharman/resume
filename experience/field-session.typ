@@ -8,7 +8,7 @@
   bullets: (
     [
       Designed a serverless architecture in *AWS* estimated to cost roughly
-      *1/10th* of equivalent traditional compute options
+      1/10th of equivalent traditional compute options
     ],
     [
       Provisioned cloud resources with OpenTofu (an open-source fork of
