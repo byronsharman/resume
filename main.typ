@@ -36,12 +36,10 @@
 
 == Software Engineering Experience
 
-#import "experience/csci220.typ"
-#work(..csci220.data, verbosity: 2)
+#work("experience/csci220.typ", verbosity: 2)
 #import "projects/byronsharman-com.typ"
 #project(..byronsharman-com.data, verbosity: 1, bullet-limit: 2)
-#import "experience/field-session.typ"
-#work(..field-session.data, verbosity: 2)
+#work("experience/field-session.typ", verbosity: 2)
 #import "projects/blasterhacks-2025.typ"
 #project(..blasterhacks-2025.data, verbosity: 1)
 #import "projects/blasterhacks-2024.typ"
@@ -49,11 +47,10 @@
 
 == Other Experience
 
-#include "experience/walmart.typ"
-#include "experience/ppld.typ"
+#work("experience/walmart.typ")
+#work("experience/ppld.typ")
 
-#import "experience/bees-computing.typ"
-#work(..bees-computing.data)
+#work("experience/bees-computing.typ")
 
 #line(length: 100%, stroke: 1pt)
 

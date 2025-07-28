@@ -202,13 +202,16 @@
 }
 
 #let work(
-  title: "",
-  company: "",
+  file,
   ..args,
 ) = {
+  import file: data
   experience(
-    entity: company,
-    parenthetical: title,
+    entity: data.company,
+    parenthetical: data.title,
+    bullets: data.at("bullets", default: ()),
+    dates: data.dates,
+    location: data.location,
     ..args,
   )
 }
