@@ -217,16 +217,18 @@
 }
 
 #let project(
-  name: "",
-  hackathon: false,
-  parenthetical: "",
+  file,
   ..args,
 ) = {
-  if hackathon {
-    args = arguments(..args, parenthetical: [Hackathon: #parenthetical])
+  import file: data
+  if data.at("hackathon", default: false) {
+    data.parenthetical = [Hackathon: #data.parenthetical]
   }
   experience(
-    entity: name,
+    bullets: data.bullets,
+    dates: data.dates,
+    entity: data.name,
+    parenthetical: data.at("parenthetical", default: ""),
     ..args,
   )
 }

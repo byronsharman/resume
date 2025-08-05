@@ -12,7 +12,7 @@
       Tailored *SEO* through practices like OpenGraph and JSON-LD structured data, `<meta>` tags, responsive web design, etc.
     ],
     [
-      Wrote custom Markdown rendering wrappers around `marked.js`, allowing for syntax highlighting and `<figure>`s with image caption support
+      Wrote custom Markdown renderer for `marked.js`, enabling features like responsive images and syntax highlighting
     ],
   ),
 )

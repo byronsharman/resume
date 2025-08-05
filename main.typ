@@ -31,19 +31,18 @@
 // #include "education/canterbury.typ"
 
 == Skills
-/ Technologies and Frameworks: Git, Linux, AWS, Terraform, Svelte, SvelteKit, TailwindCSS, Node.js
-/ Languages: Typescript, JavaScript, Go, Python, C++, Java, Bash, regex, Nix, Typst, LaTeX
+/ Concepts: Agile, Scrum, APIs, SSR, CI/CD, DevOps, testing, infrastructure as code, a11y, SDLC, operating systems
+/ Technologies and Frameworks: Git, Linux, AWS, Terraform, Vite, Svelte, SvelteKit, TailwindCSS, Node.js
+/ Languages: TypeScript, JavaScript, Python, Go, C++, Java, Bash, regex, Nix, Typst, LaTeX
 
 == Software Engineering Experience
 
 #work("experience/csci220.typ", verbosity: 2)
-#import "projects/byronsharman-com.typ"
-#project(..byronsharman-com.data, verbosity: 1, bullet-limit: 2)
+#project("projects/byronsharman-com.typ", verbosity: 1, bullet-limit: 3)
 #work("experience/field-session.typ", verbosity: 2)
-#import "projects/blasterhacks-2025.typ"
-#project(..blasterhacks-2025.data, verbosity: 1)
-#import "projects/blasterhacks-2024.typ"
-#project(..blasterhacks-2024.data, verbosity: 1, bullet-limit: 2)
+#project("projects/blasterhacks-2025.typ", verbosity: 1)
+// #project("projects/blasterhacks-2024.typ", verbosity: 1, bullet-limit: 2)
+#project("projects/bangbang.typ", verbosity: 1, bullet-limit: 1)
 
 == Other Experience
 
@@ -52,6 +51,5 @@
 
 #work("experience/bees-computing.typ")
 
-#line(length: 100%, stroke: 1pt)
-
-/ Conversation starters: I play piano, cook, hike, play video games, read books, blog, edit Wikipedia, and more!
+// #line(length: 100%, stroke: 1pt)
+// / Conversation starters: I play piano, cook, hike, play video games, read books, blog, edit Wikipedia, and more!
