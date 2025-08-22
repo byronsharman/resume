@@ -9,6 +9,9 @@
       Leveraged *Svelte* to generate blogs, projects, and blog previews from YAML metadata and Markdown
     ],
     [
+      Wrote end-to-end tests using *Playwright*, making it possible to make and deploy rapid changes with confidence
+    ],
+    [
       Tailored *SEO* through practices like OpenGraph and JSON-LD structured data, `<meta>` tags, responsive web design, etc.
     ],
     [
