@@ -2,17 +2,17 @@
 
 #let data = (
   name: "President of ACM",
-  dates: dates-helper(start-date: "May 2024", end-date: "Present"),
+  dates: dates-helper(start-date: "May 2025", end-date: "Present"),
   parenthetical: "Computer Science Club",
   bullets: (
     [
-      Leveraged *Svelte* to generate blogs, projects, and blog previews from YAML metadata and Markdown
+      Wrote competitive programming problems for the High School Programming Competition, igniting a passion for problem-solving in over 200 high school students
     ],
     [
-      Tailored *SEO* through practices like OpenGraph and JSON-LD structured data, `<meta>` tags, responsive web design, etc.
+      Built connections with industry partners and software engineers to create networking opportunities for club members
     ],
     [
-      Wrote custom Markdown renderer for `marked.js`, enabling features like responsive images and syntax highlighting
+      Engaged with other students to build a welcoming community around a shared passion for computer science
     ],
   ),
 )

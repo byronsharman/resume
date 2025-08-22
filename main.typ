@@ -37,13 +37,13 @@
 
 == Relevant Experience
 
-#project("experience/acm-president.typ", verbosity: 0)
+#project("experience/acm-president.typ", verbosity: 1)
 #work("experience/csci220.typ", verbosity: 2)
 #project("projects/byronsharman-com.typ", verbosity: 1, bullet-limit: 3)
 #work("experience/field-session.typ", verbosity: 2)
 #project("projects/blasterhacks-2025.typ", verbosity: 1)
 // #project("projects/blasterhacks-2024.typ", verbosity: 1, bullet-limit: 2)
-#project("projects/bangbang.typ", verbosity: 1, bullet-limit: 1)
+// #project("projects/bangbang.typ", verbosity: 1, bullet-limit: 1)
 
 == Other Experience
 
