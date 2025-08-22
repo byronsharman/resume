@@ -8,5 +8,4 @@
   consistent: true,
 )
 - GPA: 3.625
-- President of ACM (Computer Science club)
 - Semester abroad: University of Canterbury (Christchurch, New Zealand)

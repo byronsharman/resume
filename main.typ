@@ -35,8 +35,9 @@
 / Technologies and Frameworks: Git, Linux, AWS, Terraform, Vite, Svelte, SvelteKit, TailwindCSS, Node.js
 / Languages: TypeScript, JavaScript, Python, Go, C++, Java, Bash, regex, Nix, Typst, LaTeX
 
-== Software Engineering Experience
+== Relevant Experience
 
+#project("experience/acm-president.typ", verbosity: 0)
 #work("experience/csci220.typ", verbosity: 2)
 #project("projects/byronsharman-com.typ", verbosity: 1, bullet-limit: 3)
 #work("experience/field-session.typ", verbosity: 2)
