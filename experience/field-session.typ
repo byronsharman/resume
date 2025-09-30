@@ -1,9 +1,12 @@
 #import "../lib.typ": dates-helper
 
 #let data = (
+  /*
   title: "CSCI370 Field Session",
   location: "Golden, CO",
   company: "Swim Tech, LLC",
+  */
+  name: "Swim Tech, LLC",
   dates: dates-helper(start-date: "May 2025", end-date: "June 2025"),
   bullets: (
     [

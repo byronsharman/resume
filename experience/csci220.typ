@@ -1,9 +1,12 @@
 #import "../lib.typ": dates-helper
 
 #let data = (
+  /*
   title: "Teaching Assistant",
   location: "Golden, CO",
   company: "Colorado School of Mines",
+  */
+  name: "Teaching Assistant at Colorado School of Mines",
   dates: dates-helper(start-date: "January 2025", end-date: "Present"),
   bullets: (
     [

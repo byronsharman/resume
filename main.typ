@@ -38,19 +38,22 @@
 == Relevant Experience
 
 #project("experience/acm-president.typ", verbosity: 1)
-#work("experience/csci220.typ", verbosity: 2)
-#project("projects/byronsharman-com.typ", verbosity: 1, bullet-limit: 3)
-#work("experience/field-session.typ", verbosity: 2)
+// #work("experience/csci220.typ", verbosity: 2)
+#project("experience/csci220.typ", verbosity: 1)
+#project("projects/byronsharman-com.typ", verbosity: 1, bullet-limit: 2)
+// #work("experience/field-session.typ", verbosity: 1)
+#project("experience/field-session.typ", verbosity: 1)
 #project("projects/blasterhacks-2025.typ", verbosity: 1)
 // #project("projects/blasterhacks-2024.typ", verbosity: 1, bullet-limit: 2)
 // #project("projects/bangbang.typ", verbosity: 1, bullet-limit: 1)
+#project("projects/blasterhacks-2024.typ", verbosity: 1, bullet-limit: 2)
 
 == Other Experience
 
 #work("experience/walmart.typ")
 #work("experience/ppld.typ")
 
-#work("experience/bees-computing.typ")
+// #work("experience/bees-computing.typ")
 
 // #line(length: 100%, stroke: 1pt)
 // / Conversation starters: I play piano, cook, hike, play video games, read books, blog, edit Wikipedia, and more!
