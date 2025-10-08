@@ -12,10 +12,10 @@
     [
       Built a microservice that converts voice recordings to text, recognizes names, and matches them to student records, paving the way for automations that empower Swim Tech to spend less time on logistics and more on swim instruction
     ],
-    // [
-    //   Designed a serverless architecture in *AWS* estimated to cost 1/10th of
-    //   equivalent traditional compute options
-    // ],
+    [
+      Designed a serverless architecture in *AWS* estimated to cost 1/10th of
+      equivalent traditional compute options
+    ],
     [
       Provisioned cloud resources with *infrastructure as code* for better
       reproducibility, a seamless client hand-off, and a straightforward process
