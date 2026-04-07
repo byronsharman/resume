@@ -6,7 +6,7 @@
   parenthetical: "Computer Science Club",
   bullets: (
     [
-      Wrote competitive programming problems for the High School Programming Competition, igniting a passion for problem-solving in over 200 high school students
+      Wrote competitive programming problems for the High School Programming Competition, igniting a passion for problem solving in over 200 high school students
     ],
     [
       Built connections with industry partners and software engineers to create networking opportunities for club members
