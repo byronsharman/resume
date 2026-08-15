@@ -31,15 +31,9 @@
   )
 
   set page(
-    margin: 0.47in,
+    margin: 0.40in,
     paper: paper,
   )
-
-  // Link styles
-  show link: it => {
-    if it.dest.starts-with("tel:") { it }
-    else { underline(it, offset: 2pt) }
-  }
 
   // Small caps for section titles
   show heading.where(level: 2): it => [
@@ -82,9 +76,15 @@
 
     align(
       right,
-      links
-        .map(url => link("https://" + url, url))
-        .join("\n")
+      {
+        // Link styles
+        // show link: it => {
+        //   if it.dest.starts-with("tel:") { it } else { underline(it, offset: 2pt) }
+        // }
+        show link: underline
+        
+        links.map(url => link("https://" + url, url)).join("\n")
+      },
     )
   )
 
@@ -140,7 +140,7 @@
     generic-two-by-two(
       top-left: [=== #institution],
       top-right: dates,
-      bottom-left: emph(degree),
+      bottom-left: degree,
       bottom-right: emph(location),
     )
   } else {
@@ -155,35 +155,38 @@
 }
 
 #let experience(
-  entity: "",
-  parenthetical: "",
-  dates: "",
-  location: "",
+  file,
   // 0 = one-line header only; 1 = one-line header with bullets; 2 = two-line header with bullets
   verbosity: 0,
-  bullets: (),
   bullet-limit: -1,
 ) = {
+  import file: data
+  let bullets = data.at("bullets", default: ())
+  let location = data.at("location", default: "")
+  let parenthetical = data.at("parenthetical", default: "")
+
   let bullet-content = {
+    if bullet-limit >= 0 {
+      bullets = bullets.slice(0, count: bullet-limit)
+    }
     if bullets.len() > 0 {
-      if bullet-limit >= 0 {
-        bullets = bullets.slice(0, count: bullet-limit)
-      }
       list(..bullets)
+    } else {
+      v(-2pt)
     }
   }
   let one-heading = generic-one-by-two(
     left: {
-      heading(level: 3, entity)
+      heading(level: 3, data.title)
       if parenthetical != "" {
         [ (#parenthetical)]
       }
     },
-    right: dates,
+    right: data.dates,
   )
   let two-heading = generic-two-by-two(
-    top-left: [=== #entity],
-    top-right: dates,
+    top-left: [=== #data.title],
+    top-right: data.dates,
     bottom-left: parenthetical,
     bottom-right: emph(location),
   )
@@ -201,6 +204,7 @@
   }
 }
 
+/*
 #let work(
   file,
   ..args,
@@ -232,28 +236,4 @@
     ..args,
   )
 }
-
-#let certificates(
-  name: "",
-  issuer: "",
-  url: "",
-  date: "",
-) = {
-  [
-    *#name*, #issuer
-    #if url != "" {
-      [ (#link("https://" + url)[#url])]
-    }
-    #h(1fr) #date
-  ]
-}
-
-#let extracurriculars(
-  activity: "",
-  dates: "",
-) = {
-  generic-one-by-two(
-    left: [=== #activity],
-    right: dates,
-  )
-}
+*/

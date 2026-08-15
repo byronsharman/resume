@@ -1,18 +1,17 @@
 #import "../lib.typ": dates-helper
 
 #let data = (
-  /*
-  title: "Teaching Assistant",
+  parenthetical: "Lead TA (CSCI 220: Data Structures and Algorithms)",
+  title: "Colorado School of Mines",
   location: "Golden, CO",
-  company: "Colorado School of Mines",
-  */
-  name: "Teaching Assistant at Colorado School of Mines",
   dates: dates-helper(start-date: "January 2025", end-date: "Present"),
   bullets: (
     [
-      Helped students understand *data structures and algorithms* such as
+      Helped students understand data structures and algorithms such as
       hashtables, tries, and $k$-way merge sort
     ],
+    // I should probably put something about how my responsibilities have
+    // expanded with becoming lead TA
     [
       Graded and provided personalized feedback on over 100 analysis papers
       investigating the purpose, time complexity, space complexity, and

@@ -7,6 +7,5 @@
   degree: "Bachelor of Science in Computer Science",
   consistent: true,
 )
-- Credera C-MAPP scholar
-// - GPA: 3.625
-- Semester abroad: University of Canterbury (Christchurch, New Zealand)
+// - Credera C-MAPP scholar
+// - Semester abroad: University of Canterbury (Christchurch, New Zealand)

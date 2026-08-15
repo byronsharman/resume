@@ -33,20 +33,23 @@
 == Skills
 / Concepts: Agile, Scrum, APIs, SSR, CI/CD, DevOps, testing, infrastructure as code, a11y, SDLC, operating systems
 / Technologies and Frameworks: Git, Linux, AWS, Terraform, Vite, Svelte, SvelteKit, TailwindCSS, Node.js
-/ Languages: TypeScript, JavaScript, Python, Go, C++, Java, Bash, regex, Nix, Typst, LaTeX
+/ Languages: TypeScript, JavaScript, Go, Python, C++, Java, Bash, regex, Nix, Typst, LaTeX
 
-== Relevant Experience
+== Experience
 
-#project("experience/acm-president.typ", verbosity: 1)
-// #work("experience/csci220.typ", verbosity: 2)
-#project("experience/csci220.typ", verbosity: 1)
-#project("projects/byronsharman-com.typ", verbosity: 1, bullet-limit: 2)
-// #work("experience/field-session.typ", verbosity: 1)
-#project("experience/field-session.typ", verbosity: 1)
-#project("projects/blasterhacks-2025.typ", verbosity: 1)
-// #project("projects/bangbang.typ", verbosity: 1, bullet-limit: 1)
-#project("projects/blasterhacks-2024.typ", verbosity: 1, bullet-limit: 2)
+#experience("experience/csci220.typ", verbosity: 2, bullet-limit: 0)
+#experience("experience/the-trade-desk.typ", verbosity: 2)
+#experience("experience/field-session.typ", verbosity: 2, bullet-limit: 3)
 
+== Projects and Activities
+#experience("projects/byronsharman-com.typ", verbosity: 1, bullet-limit: 2)
+#experience("experience/acm-president.typ", verbosity: 1, bullet-limit: 2)
+#experience("projects/dubhacks-2025.typ", verbosity: 1)
+#experience("projects/blasterhacks-2025.typ", verbosity: 1)
+// #experience("projects/bangbang.typ", verbosity: 2, bullet-limit: 1)
+// #experience("projects/blasterhacks-2024.typ", verbosity: 2, bullet-limit: 2)
+
+/*
 == Other Experience
 
 #work("experience/walmart.typ")
@@ -55,3 +58,4 @@
 
 // #line(length: 100%, stroke: 1pt)
 // / Conversation starters: I play piano, cook, hike, play video games, read books, blog, edit Wikipedia, and more!
+*/
