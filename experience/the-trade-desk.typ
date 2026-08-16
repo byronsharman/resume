@@ -21,8 +21,7 @@
       engineering labor over time
     ],
     [
-      Took initiative to fix things when like the entire repo exploded after we
-      renamed it and stuff
+  Maybe something about pivoting or being agile in the face of ambiguous project requirements?
     ],
   ),
 )
