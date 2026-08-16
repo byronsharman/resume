@@ -2,8 +2,9 @@
 
 #let data = (
   title: "Swim Tech, LLC",
-  parenthetical: "Collaboration for CSCI370 Field Session",
+  parenthetical: "CSCI370 Field Session",
   // parenthetical: "",
+  location: "Golden, CO",
   dates: dates-helper(start-date: "May 2025", end-date: "June 2025"),
   bullets: (
     [
