@@ -30,11 +30,6 @@
 #include "education/mines.typ"
 // #include "education/canterbury.typ"
 
-== Skills
-/ Concepts: Agile, Scrum, APIs, SSR, CI/CD, DevOps, testing, infrastructure as code, a11y, SDLC, operating systems
-/ Technologies and Frameworks: Git, Linux, AWS, Terraform, Vite, Svelte, SvelteKit, TailwindCSS, Node.js
-/ Languages: TypeScript, JavaScript, Go, Python, C++, Java, Bash, regex, Nix, Typst, LaTeX
-
 == Experience
 
 #experience("experience/csci220.typ", verbosity: 2, bullet-limit: 0)
@@ -48,6 +43,11 @@
 #experience("projects/blasterhacks-2025.typ", verbosity: 1)
 // #experience("projects/bangbang.typ", verbosity: 2, bullet-limit: 1)
 // #experience("projects/blasterhacks-2024.typ", verbosity: 2, bullet-limit: 2)
+
+== Skills
+/ Concepts: Agile, Scrum, APIs, SSR, CI/CD, DevOps, testing, infrastructure as code, a11y, SDLC, operating systems
+/ Technologies and Frameworks: Git, Linux, AWS, Terraform, Vite, Svelte, SvelteKit, TailwindCSS, Node.js
+/ Languages: TypeScript, JavaScript, Go, Python, C++, Java, Bash, regex, Nix, Typst, LaTeX
 
 /*
 == Other Experience
