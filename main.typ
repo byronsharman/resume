@@ -45,9 +45,9 @@
 // #experience("projects/blasterhacks-2024.typ", verbosity: 2, bullet-limit: 2)
 
 == Skills
-/ Concepts: Agile, Scrum, APIs, CI/CD, DevOps, infrastructure as code, accessibility, SDLC
-/ Technologies and Frameworks: Git, Linux, AWS, Kubernetes, Terraform, Vite, Svelte, TailwindCSS, Node.js, Backstage
-/ Languages: TypeScript, JavaScript, Go, Python, C++, Java, Bash, regex, Nix, Typst, LaTeX
+/ Cloud & Infra: AWS, Kubernetes, Terraform, GitOps, HashiCorp Vault, Linux, Backstage, GitHub, GitLab
+// / Frameworks: Node.js, Svelte, Vite, Tailwind, Node.js
+/ Languages: TypeScript, JavaScript, Go, Python, C++, Java, Nix, Typst, LaTeX
 
 /*
 == Other Experience
