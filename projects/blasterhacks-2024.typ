@@ -3,7 +3,7 @@
 #let data = (
   name: "StandUp",
   dates: "February 2024",
-  parenthetical: "Blasterhacks 2024",
+  parenthetical: "BlasterHacks 2024",
   hackathon: true,
   bullets: (
     [

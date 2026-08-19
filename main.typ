@@ -32,11 +32,11 @@
 
 == Experience
 
-#experience("experience/csci220.typ", verbosity: 2, bullet-limit: 0)
+#experience("experience/csci220.typ", verbosity: 2, bullet-limit: 1)
 #experience("experience/the-trade-desk.typ", verbosity: 2)
 #experience("experience/field-session.typ", verbosity: 2, bullet-limit: 3)
 
-== Projects and Activities
+== Projects and Leadership
 #experience("projects/byronsharman-com.typ", verbosity: 1, bullet-limit: 2)
 #experience("experience/acm-president.typ", verbosity: 1, bullet-limit: 2)
 #experience("projects/dubhacks-2025.typ", verbosity: 1)
@@ -45,8 +45,8 @@
 // #experience("projects/blasterhacks-2024.typ", verbosity: 2, bullet-limit: 2)
 
 == Skills
-/ Concepts: Agile, Scrum, APIs, SSR, CI/CD, DevOps, testing, infrastructure as code, a11y, SDLC, operating systems
-/ Technologies and Frameworks: Git, Linux, AWS, Terraform, Vite, Svelte, SvelteKit, TailwindCSS, Node.js
+/ Concepts: Agile, Scrum, APIs, CI/CD, DevOps, infrastructure as code, accessibility, SDLC
+/ Technologies and Frameworks: Git, Linux, AWS, Kubernetes, Terraform, Vite, Svelte, TailwindCSS, Node.js, Backstage
 / Languages: TypeScript, JavaScript, Go, Python, C++, Java, Bash, regex, Nix, Typst, LaTeX
 
 /*

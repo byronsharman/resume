@@ -1,7 +1,7 @@
 #import "../lib.typ": dates-helper
 
 #let data = (
-  title: "President of ACM",
+  title: "ACM Chapter President",
   dates: dates-helper(start-date: "June 2025", end-date: "May 2026"),
   parenthetical: "Computer Science Club",
   bullets: (
