@@ -8,13 +8,11 @@
       Won second place for a decentralized app enabling multiple clients to
       interact with the same terminal simultaneously
     ],
-    /*
-    [
-      made a terminal collaboration program allowing multiple clients to interact with a terminal shell simultaneously over a peer-to-peer network connection powered by libp2p
-    ],
-    [
-      Punched holes in a firewall using libp2p to set up decentralized network connections, a more privacy-respecting and cost-effective solution than a cloud-hosted central server
-    ],
-    */
+    // [
+    //   Tech stack: Go, bbolt, libp2p. That's it! You can get really far with `io.Reader` and channels.
+    // ],
+    // [
+    //   Punched holes in a firewall using libp2p to set up decentralized network connections, a more privacy-respecting and cost-effective solution than a cloud-hosted central server
+    // ],
   ),
 )
