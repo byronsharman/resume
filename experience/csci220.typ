@@ -7,7 +7,7 @@
   dates: dates-helper(start-date: "January 2025", end-date: "Present"),
   bullets: (
     [
-      Graded and provided personalized feedback on over 100 analysis papers
+      Graded and provided personalized feedback on 150+ analysis papers
       investigating the purpose, time complexity, space complexity, and
       performance--memory tradeoffs of data structures and algorithms
     ],
