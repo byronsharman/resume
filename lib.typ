@@ -31,7 +31,7 @@
   )
 
   set page(
-    margin: 0.50in,
+    margin: 0.45in,
     paper: paper,
   )
 

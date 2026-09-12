@@ -35,32 +35,18 @@
 
 #include "education/mines.typ"
 
-#{
-  set block(inset: (left: 15pt))
+#block(inset: (left: 15pt), {
   experience("experience/csci220.typ", subheading: true, verbosity: 1, bullet-limit: 2)
   experience("experience/acm-president.typ", subheading: true, verbosity: 1, bullet-limit: 2)
   experience("experience/field-session.typ", subheading: true, verbosity: 1)
-}
+})
 
 == Hackathons
-// #experience("projects/byronsharman-com.typ", verbosity: 1, bullet-limit: 2)
 #experience("projects/dubhacks-2025.typ", verbosity: 1)
 #experience("projects/blasterhacks-2025.typ", verbosity: 1)
-// #experience("projects/bangbang.typ", verbosity: 2, bullet-limit: 1)
 // #experience("projects/blasterhacks-2024.typ", verbosity: 2, bullet-limit: 2)
 
 == Skills
 / Cloud & Infra: AWS, Kubernetes, Terraform, GitOps, HashiCorp Vault, Linux, Backstage, GitHub, GitLab
-// / Frameworks: Node.js, Svelte, Vite, Tailwind, Node.js
+/ Frameworks: Svelte, Vite, Tailwind, Node.js
 / Languages: TypeScript, JavaScript, Go, Python, C++, Java, Nix, Typst, LaTeX
-
-/*
-== Other Experience
-
-#work("experience/walmart.typ")
-#work("experience/ppld.typ")
-// #work("experience/bees-computing.typ")
-
-// #line(length: 100%, stroke: 1pt)
-// / Conversation starters: I play piano, cook, hike, play video games, read books, blog, edit Wikipedia, and more!
-*/

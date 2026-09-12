@@ -23,8 +23,8 @@
       installation, reducing build times by 40%
     ],
     [
-      Coordinated a cross-functional debugging effort after identifying and
-      escalating a deployment stack failure
+      Coordinated a debugging effort between the Kubernetes and SRE teams
+      after identifying a deployment stack failure
     ],
     [
       Led a training session to teach approximately 50 engineers how to use the
