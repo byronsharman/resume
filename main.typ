@@ -36,7 +36,7 @@
 #include "education/mines.typ"
 
 #{
-  // set block(inset: (left: 50pt))
+  set block(inset: (left: 15pt))
   experience("experience/csci220.typ", subheading: true, verbosity: 1, bullet-limit: 2)
   experience("experience/acm-president.typ", subheading: true, verbosity: 1, bullet-limit: 2)
   experience("experience/field-session.typ", subheading: true, verbosity: 1)
