@@ -1,7 +1,7 @@
 #import "../lib.typ": dates-helper
 
 #let data = (
-  title: "Swim Tech, LLC",
+  title: "Swim Tech",
   parenthetical: "CSCI370 Field Session",
   // parenthetical: "",
   location: "Golden, CO",
@@ -9,21 +9,13 @@
   bullets: (
     [
       Built a microservice that converts voice recordings to text, recognizes
-      names, and matches them to student records, paving the way for automations
-      that empower Swim Tech to spend less time on logistics and more on swim
+      names, and matches them to student records, enabling automations that
+      empower Swim Tech to spend less time on logistics and more on swim
       instruction
     ],
     [
-      Designed a serverless architecture in AWS estimated to cost 1/10th of
-      equivalent traditional compute options
-    ],
-    [
-      Provisioned cloud resources with infrastructure as code for continuous
-      deployment and a seamless client hand-off
-    ],
-    [
-      Bridged business and engineering domains by translating stakeholder
-      requirements into technical specifications
+      Reduced costs by 90% using a serverless architecture in AWS with
+      infrastructure as code and continuous deployment
     ],
   ),
 )

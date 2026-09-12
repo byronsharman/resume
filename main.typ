@@ -3,6 +3,9 @@
 // You can see an example of what it looks like in example-contact-info.typ
 #import "contact-info.typ": contact-info
 
+// TODO: add
+#set list(spacing: 10pt)
+
 #let name = "Byron Sharman"
 #let links = (
   "byronsharman.com",
@@ -25,20 +28,22 @@
   personal-info-position: left,
 )
 
+== Experience
+#experience("experience/the-trade-desk.typ", verbosity: 2)
+
 == Education
 
 #include "education/mines.typ"
-// #include "education/canterbury.typ"
 
-== Experience
-
-#experience("experience/csci220.typ", verbosity: 2, bullet-limit: 1)
-#experience("experience/the-trade-desk.typ", verbosity: 2)
-#experience("experience/field-session.typ", verbosity: 2, bullet-limit: 3)
+#{
+  // set block(inset: (left: 50pt))
+  experience("experience/csci220.typ", subheading: true, verbosity: 1, bullet-limit: 2)
+  experience("experience/acm-president.typ", subheading: true, verbosity: 1, bullet-limit: 2)
+  experience("experience/field-session.typ", subheading: true, verbosity: 1)
+}
 
 == Projects and Leadership
-#experience("projects/byronsharman-com.typ", verbosity: 1, bullet-limit: 2)
-#experience("experience/acm-president.typ", verbosity: 1, bullet-limit: 2)
+// #experience("projects/byronsharman-com.typ", verbosity: 1, bullet-limit: 2)
 #experience("projects/dubhacks-2025.typ", verbosity: 1)
 #experience("projects/blasterhacks-2025.typ", verbosity: 1)
 // #experience("projects/bangbang.typ", verbosity: 2, bullet-limit: 1)

@@ -7,22 +7,26 @@
   dates: dates-helper(start-date: "May 2026", end-date: "August 2026"),
   bullets: (
     [
-      Built an API integration that populated Backstage's software catalog with
-      services inferred from Kubernetes workloads, giving engineers and AI
-      agents visibility across the entire org's platform for the first time
+      Improved developer experience by dynamically discovering Kubernetes
+      workloads, exposing 800+ additional services in the software catalog
     ],
     [
-      Expanded that integration to populate Backstage's per-entity Kubernetes
-      dashboard, so the UI shows data fetched from our internal API rather than
-      directly connecting to pods from a hardcoded list
+      Implemented a dashboard projected to reduce incident response time by 25%
+      by allowing incident response teams to pinpoint problems in Kubernetes
+      deployments
+      // my manager estimated this for me!
     ],
     [
-      Reduced build times by 40%, increasing iteration speed and saving
-      hundreds of hours of engineering labor over time
+      Addressed CI/CD slowness by optimized image builds and dependency
+      installation, reducing build times by 40%
     ],
     [
-      Took ownership of problems outside the scope of my project, such as failing
-      builds due to namespace migrations
+      Coordinated a cross-functional debugging effort after identifying and
+      escalating a deployment stack failure
+    ],
+    [
+      Led a training session to teach approximately 50~engineers how to use the
+      new catalog for service discovery and dashboard for incident response
     ],
   ),
 )

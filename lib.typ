@@ -81,8 +81,6 @@
         // show link: it => {
         //   if it.dest.starts-with("tel:") { it } else { underline(it, offset: 2pt) }
         // }
-        show link: underline
-        
         links.map(url => link("https://" + url, url)).join("\n")
       },
     )
@@ -156,6 +154,7 @@
 
 #let experience(
   file,
+  subheading: false,
   // 0 = one-line header only; 1 = one-line header with bullets; 2 = two-line header with bullets
   verbosity: 0,
   bullet-limit: -1,
@@ -175,17 +174,28 @@
       v(-2pt)
     }
   }
+  // if parenthetical != "" {
+  //   data.title = [#data.title~#text(style: "normal", weight: "regular")[(#data.title)]]
+  // }
+  let heading-helper = if subheading {
+    text(style: "oblique", data.title)
+  } else {
+    heading(level: 3, data.title)
+  }
   let one-heading = generic-one-by-two(
+    // left: heading-helper,
     left: {
-      heading(level: 3, data.title)
-      if parenthetical != "" {
-        [ (#parenthetical)]
+      if parenthetical == "" {
+        heading-helper
+      } else {
+        heading-helper
+        if parenthetical != "" [ (#parenthetical)]
       }
     },
     right: data.dates,
   )
   let two-heading = generic-two-by-two(
-    top-left: [=== #data.title],
+    top-left: heading-helper,
     top-right: data.dates,
     bottom-left: parenthetical,
     bottom-right: emph(location),
