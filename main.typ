@@ -42,7 +42,7 @@
   experience("experience/field-session.typ", subheading: true, verbosity: 1)
 }
 
-== Projects and Leadership
+== Hackathons
 // #experience("projects/byronsharman-com.typ", verbosity: 1, bullet-limit: 2)
 #experience("projects/dubhacks-2025.typ", verbosity: 1)
 #experience("projects/blasterhacks-2025.typ", verbosity: 1)

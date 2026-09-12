@@ -31,7 +31,7 @@
   )
 
   set page(
-    margin: 0.48in,
+    margin: 0.50in,
     paper: paper,
   )
 
@@ -107,7 +107,7 @@
 #let generic-one-by-two(
   left: "",
   right: "",
-) = block[
+) = block(below: 10pt)[
   #left #h(1fr) #right
 ]
 

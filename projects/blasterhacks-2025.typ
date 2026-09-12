@@ -5,7 +5,9 @@
   hackathon: true,
   bullets: (
     [
-      Won second place for a decentralized peer-to-peer live terminal collaboration app enabling multiple clients to interact with the same terminal simultaneously using libp2p
+      Won second place for a decentralized peer-to-peer live terminal
+      collaboration app enabling multiple clients to interact with the same
+      terminal simultaneously
     ],
   ),
 )
