@@ -1,8 +1,8 @@
 #import "../lib.typ": dates-helper
 
 #let data = (
-  parenthetical: "CSCI220: Data Structures and Algorithms",
-  title: "Lead TA",
+  parenthetical: "Lead TA (CSCI220: Data Structures and Algorithms)",
+  title: "Colorado School of Mines",
   location: "Golden, CO",
   dates: dates-helper(start-date: "January 2025", end-date: "Present"),
   bullets: (

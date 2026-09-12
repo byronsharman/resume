@@ -28,25 +28,21 @@
   personal-info-position: left,
 )
 
-== Experience
-#experience("experience/the-trade-desk.typ", verbosity: 2)
-
 == Education
-
 #include "education/mines.typ"
 
-#block(inset: (left: 15pt), {
-  experience("experience/csci220.typ", subheading: true, verbosity: 1, bullet-limit: 2)
-  experience("experience/acm-president.typ", subheading: true, verbosity: 1, bullet-limit: 2)
-  experience("experience/field-session.typ", subheading: true, verbosity: 1)
-})
+== Experience
+#experience("experience/the-trade-desk.typ", verbosity: 2)
+#experience("experience/csci220.typ", verbosity: 2, bullet-limit: 2)
 
-== Hackathons
+== Projects and Leadership
+#experience("experience/acm-president.typ", verbosity: 1, bullet-limit: 2)
 #experience("projects/dubhacks-2025.typ", verbosity: 1)
+#experience("experience/field-session.typ", verbosity: 1)
 #experience("projects/blasterhacks-2025.typ", verbosity: 1)
 // #experience("projects/blasterhacks-2024.typ", verbosity: 2, bullet-limit: 2)
 
 == Skills
 / Cloud & Infra: AWS, Kubernetes, Terraform, GitOps, HashiCorp Vault, Linux, Backstage, GitHub, GitLab
-/ Frameworks: Svelte, Vite, Tailwind, Node.js
+// / Frameworks: Svelte, Vite, Tailwind, Node.js
 / Languages: TypeScript, JavaScript, Go, Python, C++, Java, Nix, Typst, LaTeX
